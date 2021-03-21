@@ -1,0 +1,27 @@
+table{
+    border: 3px solid #00F;
+    background-color: #555;
+    border-style: double;
+    margin: 5px auto; /*5 px auto mette sotto sopra 5 px e destra e sinistra centrato*/
+    /*border-spacing: 2px;*/ /*toglie la spazziatura tra una cella e laltra*/
+}
+table tr{
+    /*le righe non risentono della proprieta border*/
+    background-color: #AAA;
+}
+table tr td{
+    background-color: #EEEEEE;
+    border: solid 1px #FF0000;
+}
+table tr td:hover{
+    background-color: #00FFFF;
+    color: #0000FF;
+    border: solid 1px #0000FF;
+}
+table tr:nth-child(4){/*nn(numero di righe) odd(a quelle dispari) even(quelle pari) n(numero di righa)*/
+    /*prendi le righe figlie di table
+     e a quelle pari applichi questo stile*/
+    text-decoration: underline;
+    font-style: italic;
+    color: #FFFF99;
+}
